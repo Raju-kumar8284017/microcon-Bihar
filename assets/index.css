@@ -1,0 +1,711 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html{
+	scroll-behavior: smooth;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+   /*  background: linear-gradient(to left ,rgba(35, 238, 79, 0.5),rgba(127, 236, 105, 0.1)); */
+
+.bg-images{
+  background-image: url(img/bg-business.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+/* -----------custom -define ------------========= */
+:root{
+    --green:  hsl(113, 55%, 46%);
+    --pink: #f04c7d;
+    --blue: #124560;
+}
+.bg-blue{
+  background-color: var(--blue);
+}
+
+.text-pink{
+  color: var(--pink) !important;
+}
+
+.black{
+    color: black;
+}
+
+
+.font-style{
+  font-family: 'Segoe Script', 'Arial Narrow', Arial, sans-serif;
+}
+.display-7{
+  font-size: 18px;
+}
+.btn-primary{
+   background-color: var(--blue);
+}
+
+.margin-btw-section{
+  margin-top: 100px;
+}
+
+/* -----------custom -define --end-----------========= */
+
+/*-------------------- logo---head--------- */
+
+/*  @media (max-width:500px){
+  .logo-hide{
+       display: none;
+  }
+}  */
+
+/* .container{
+    box-shadow: 0 0 10px rgb(87, 243, 87);
+} */
+
+.navbar-dark .navbar-toggler-icon {
+    background-image :url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.IAMM_LOGO, .IAMM-logo-2{
+  width: 150px;
+  height: 150px;
+  margin-top: 10px;
+}
+.NSMCH_logo{
+  width: 130px;
+  height: 130px;
+  z-index: 1;
+}
+
+.navbar-brand{
+  display: none;
+}
+
+.navbar{
+  margin-top: -55px !important;
+}
+.social-link-head{
+  margin-top: 40px;
+}
+
+#sticky{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-link{
+  border-radius: 10px;
+  font-weight: 200;
+    color: rgb(7, 7, 7);
+}
+.nav-link:hover{
+    color: var(--pink);
+}
+
+.reg-btn:hover{
+  background-color: var(--pink);
+  color: white;
+}
+
+.dropdown-item:hover{
+  background-color: var(--pink);
+  color: white;
+}
+.dropdown:hover .dropdown-menu{
+   display: block;
+}
+
+
+/* 
+
+  .top-of-nav{
+    background: rgb(175,172,237);
+    background: linear-gradient(90deg, rgba(175,172,237,1) 0%, rgba(126,230,216,0.7819502801120448) 42%, rgba(130,211,242,1) 90%);
+    
+  }
+ */
+
+  /* ----------javaScript---purpus---------- */
+ /*  .nav-up{
+    margin-top: -50px !important;
+  } */
+/* ----------javaScript---purpus---------- */
+
+/*   @keyframes jump{
+	0%{transform: translateY(0%);}
+	50%{transform: translateY(15%);}
+	75%{transform: translateY(25%);}
+	100%{transform: translateY(0%);}
+} */
+
+/* ---------nav---@media query------------- */
+
+@media (max-width:576px){
+  .navbar{
+    background-color: rgb(255, 255, 255);
+    height:90px;
+  }
+ 
+ #top-head{
+   display: none;
+ } 
+   .navbar-toggler{
+    margin-top: -30px;
+   margin-left: 300px;
+  }
+  .navbar-collapse{
+    background: white;
+  }
+  .navbar-brand{
+    display:block;
+    box-shadow: 0 0 10px white;
+    margin-top: -30px;
+    height: 100px !important;
+    width: 150px;
+  }
+  .nav-link:hover{
+    background: var(--pink) !important;
+    color: white !important;
+  }
+  
+
+}
+
+/* 
+@media (max-width:576px){
+  .navbar{
+    background-color: rgb(26, 25, 25);
+    height:100px;
+  }
+    .nav-link{
+        display: block;
+        background-size: inherit;
+    } 
+    .NSMCH_logo{
+        width: 100px;
+        height: 100px;
+      }
+      .brand{
+        display: none !important;
+    }
+    .nav-up{
+      margin-top: 0px !important;
+    }
+    .display-4{
+        font-weight: bold;
+        font-size: 18px !important;
+    } 
+    .box{
+        margin-top: 100% !important;
+      }
+      .micro-logo{
+        height: 50px;
+        position: relative;
+        margin-left: 170px;
+        margin-top: -50px;
+      }
+      .navbar-toggler{
+        position: absolute;
+       margin-top: -50px;
+      }
+      
+       .social-link-head1{
+        top: 0;
+        position: absolute;
+       margin-left: -225px;
+       font-weight: 600;
+        color: white;
+        margin-top: 5px;
+        
+      }
+      .social-link-head2{
+        top: 0;
+        position: absolute;
+        margin-left: 170px;
+        font-weight: 600;
+        color:white;
+        margin-top: 5px;
+       
+      }
+      .navbar-collapse{
+        background: white;
+        margin-top: -50px;
+      }
+      .reg-btn{
+        margin: 5px;
+        margin-left: auto;
+      }
+
+      .reg-drop{
+        margin-left: 10px;
+      }
+      .hr{
+        margin-top: -98px;
+        color: var(--pink);
+      }
+    
+}
+ */
+
+/* -------------nav end--------------------- */
+
+
+
+/*---------------landing page--------------------*/
+
+.landing-div2{
+  background: black url("/assets/img/img-4.jpeg") no-repeat ;
+	height: 400px;
+    background-size: cover;
+	color: white;
+    position: relative;
+    z-index: -1;
+}
+
+
+
+
+.landing-div{
+	background: black url("/assets/img/img-9.jpeg") no-repeat ;
+	height: 120vh;
+    background-size: cover;
+	color: white;
+    position: relative;
+    z-index: -1;
+}
+
+
+.landing-wrapper{
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 100%;
+}
+
+.banner-box{
+    height: 700px;
+}
+
+.Presents-img{
+  
+  height: 900px;
+   width:100%;
+   margin-top: -90px;
+}
+
+.mar-top{
+  margin-top: -150px;
+}
+
+/* -------------About-CONFERENCE------------- */
+
+
+
+/* --------landing page buttom------------ */
+
+
+.box1{
+  margin-top: -70px;
+  font-size: 30px;
+  padding: 20px 20px 0 20px;
+  z-index: 1;
+  height:fit-content;
+  width: fit-content;
+  border-radius: 15px;
+  background-color: var(--blue);
+  
+}
+ 
+.mtop{
+  margin-top: 10px;
+}
+  
+
+.mail{
+  font-size: 25px;
+}
+.mail:hover{
+   color: var(--pink);
+}
+
+/*   .fullscreen-landing{
+    position: relative;
+    margin-top: -80px;
+    background-color: white;
+    background-image: url(img/bihar.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .fullscreen-landing-overlay{
+    background-color: hsla(0, 0%, 67%, 0.918) !important;
+    height: 100%;
+  
+  } */
+  
+  .first-conf{
+    font-size: 42px;
+    color: var(--pink) !important;
+  }
+
+  .them{
+    color: var(--pink) !important;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .box2{
+    width: fit-content;
+    height: fit-content;
+    font-size: 30px;
+    padding: 0 20px 0 20px;
+    border-radius: 15px;
+    background-color: var(--blue);
+    
+  }
+  /* -------landing page buttom @MEDIA query------------ */
+  @media (max-width:576px){
+    .box1{
+       font-size: 15px !important;
+       padding: 10px;
+    }
+    .tropacon{
+      font-size: 30px;
+      -webkit-text-stroke:3.5px #942193;
+    }
+    .first-conf{
+      font-size: 25px;
+    } 
+    .them{
+      font-size: 15px;
+    }
+    .box2{
+      font-size: 15px;
+      padding: 10px;
+      
+    }
+
+    .Presents-img{
+      height: 500px;
+       width:100%;
+       margin-top: -90px;
+    }
+   
+}
+
+  /* -------landing page buttom @MEDIA query---end----------- */
+
+/* --------landing page buttom end------------ */
+
+
+ /*-------------------- What we’re about------------------- */
+
+ .hs_heading {
+	color: var(--pink);
+	margin: 30px auto;
+	padding-bottom: 15px;
+	position: relative;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.hs_heading:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 2px;
+	width: 65px;
+	border-bottom: 2px solid #7f9aa0;
+}
+
+ .about-bg{
+    background: linear-gradient(to right ,rgba(255,0,0, .1),rgba(243, 18, 18, 0.7));
+ }
+ .font-weight-bold{
+    font-weight: bold;
+}
+
+.INSPIRE{
+    font-weight: bolder;
+    color: var(--green);
+}
+
+.bold{
+    font-weight: bolder;
+    
+}
+
+/* ---------welcome link---------------- */
+.wel-link{
+  color: rgb(255, 255, 255);
+}
+
+.wel-link:hover{
+  color:var(--pink);
+}
+
+
+
+
+ /*-------------------- SLIDE------------------- */
+
+ .slide-text{
+  color: var(--pink);
+  font-size: 35px;
+}
+
+
+ .carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+    left: 0;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 1px;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+    gap: 5px;
+  }
+ /* -------media Query------------------ */ 
+
+  @media (max-width:576px){
+      .carousel-caption{
+          font-size: 10px;
+      }
+      .carousel-caption h5{
+          font-size: 25px;
+      }
+      .carousel-caption p{
+          display: none;
+      }
+      .height{
+        height: 300px !important;
+      }
+      .org-image{
+        width: 250px;
+        margin-left: 11%;
+      }
+      .font-media{
+        font-size: 8px;
+      }
+    
+  }
+  
+  
+  .carousel-caption{
+      z-index: 1;
+  }
+  .carousel-indicators{
+      z-index: 1;
+  }
+  .height{
+    height: 600px;
+    width: 1500px;
+  }
+
+ /* -------index--ORGANIZING COMMITTEE----------------------- */
+ .btn-outline-pink{
+     outline-color: var(--pink);
+ }
+   
+  .btn-outline-pink:hover{
+    color:white;
+    background:var(--pink);
+  }
+
+/* --------------PHOTO GALLERY---------------------------- */
+  .gallery-card{
+    overflow: hidden;
+  }
+  .gallery-card:hover .gallery-img{
+    opacity: 0.5;
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.2, 1.2);
+  }
+/* ------------------venue----------------------------------- */
+  .venue{
+    background: url(img/venue.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 500px;
+    opacity: 0.9;    
+  }
+
+  .org-image{
+    height: 230px !important;
+  }
+
+  /* ------------footer---------------- */
+
+  .NSMCH_logo-footer{
+    margin-top: 50px;
+    width: 200px;
+    height: 200px;
+    background: white;
+    border-radius: 50%;
+  }
+  .font-media{
+    font-size: 15px;
+  }
+  .footer-overlay{
+    background:var(--blue);
+    background-size: contain;
+  }
+    .footer-link{
+      color: rgb(255, 255, 255);
+      position: relative;
+      transition: 0.4s;
+    }
+     .footer-link:hover{
+      color:var(--pink);
+      margin-left: 10px;
+    } 
+
+    .footer-brand{
+       width: 100%;
+    }
+    .map{
+      width: 100%;
+      height: 300px;
+    }
+  
+    .footer-list{
+      list-style-type: none;
+      color: var(--blue);
+      margin: 0;
+      padding: 0;
+    }
+    .sine-show:hover .list-sine{
+      color: var(--pink);
+      transform: translateX(10%);
+       
+    }
+    .list-sine{
+      position: absolute;
+      transform: translateX(-100%);
+      transition: all 0.4s;
+      
+    }
+
+    .social-link{
+      color: rgb(236, 234, 234);
+    }
+    .social-link:hover{
+      color: var(--pink);
+      margin-left: 1px;
+      transition: all 0.4s;
+    }
+    
+
+    .social-link-head:hover{
+      color: var(--pink);
+      margin-left: 1px;
+      transition: all 0.4s;
+    }
+   
+  /* --------go top btn---------- */
+                                   
+  .top{
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    border-radius: 50%;
+    background: var(--pink);
+    box-shadow: 0 10px 20px rgb(0, 4, 255);
+    padding: 5px;
+    bottom: 60px;
+    right: 20px;
+    position: fixed;
+    animation: jump 5s infinite;
+  }
+  .fa-angle-up{
+    font-size: 30px;
+    align-items: center;
+    color: aliceblue;
+  }
+
+
+
+
+/* -----------REGISTRATION----------DETAILs------------ */
+
+  table{
+  border: 1px solid #000000;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 5px;
+} 
+  
+ /* -----------about--NSMCH------------------ */ 
+
+ .thembox{
+    margin-top: -70px;
+    font-size: 30px;
+    padding: 10px 20px 0 20px;
+    z-index: 1;
+    height:fit-content;
+    width: fit-content;
+    border-radius: 15px;
+    background-color: #4e6998;
+ }
+
+ .table-borderless{
+  border: hidden !important;
+} 
+
+.font{
+  font-size: 17px;
+}
+
+
+
+/* -----about--NSMCH--@media--Query------ */
+  
+@media (max-width:576px){
+  .thembox{
+    font-size: 20px;
+  } 
+}
+
+
+
+/* ------------About Us------------------ */
+
+
+
+.about-img{
+	height: 200px;
+	width: 100%;
+	background-color: white;
+	background-image: url(img/venue.png) ;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.about-overlay{
+	height: inherit;
+	width: 100%;
+	left: 0;
+	background-color: rgba(0,0, 0, 0.4);
+	position: absolute;
+}
+
+  
+/* ---------commette-------- */
+.font-size{
+  font-size: 13px;
+}
